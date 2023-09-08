@@ -1,0 +1,56 @@
+/* CSS code for department.html */
+
+h1 {
+    text-align: center;
+}
+
+.departments-list {
+    margin-top: 20px;
+}
+
+ul#departments {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#departments li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#departments li .department-name {
+    flex-grow: 1;
+}
+
+ul#departments li .remove-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.department-form {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#department-name {
+    padding: 5px;
+    width: 200px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

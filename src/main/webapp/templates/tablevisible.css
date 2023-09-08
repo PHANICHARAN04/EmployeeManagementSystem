@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "rubik", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background:url("../images/home.jpg");
+      background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+.profilecontainer{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileleft{
+    height:100%;
+    width: 25%;
+    position: relative;
+    background-color: black;
+    transition: 0.8s;
+}
+
+.profileimage{
+    width: 90%;
+    padding:20px;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profilecomponents{
+    height: 80%;
+    padding: 20px;
+}
+
+.profilecomponents ul{
+    width: 100%;
+    height: 100%;
+}
+
+
+.profilecomponents ul li{
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profilevisible{
+    visibility: visible;
+}
+
+.profileright{
+    width: 70%;
+    height: 100%;
+    transition: ease-in-out 0.8s;
+}
+
+.profilesection1{
+    width: 100%;
+    height: 70%;
+    margin-bottom:20px;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+}
+
+.profilesection1 h2,.profilesection2 h2{
+    text-align: left;
+  position:sticky;
+  top:10px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.profilesection1 .profilefields,.profilesection2 .profilefields{
+    display: flex;
+    margin-top: 35px;
+}
+
+.profilesection1 .profilefields label ,.profilesection2 .profilefields label{
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.profilehamburg{
+    visibility: hidden;
+}
+
+.profilefields2{
+        display: flex;
+        flex-direction: column;
+        
+    }
+.profilefields2 .onehere{
+  margin-top:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.profilefields2 .onehere span{
+  font-size:22px;
+  font-weight:800;
+  width:30%;
+  font-family:"consalas";
+}
+
+
+
+.profilefields2 .onehere label{
+  font-size:18px;
+  font-weight:600;
+  width:30%;
+  font-family:"san-serif";
+}
+
+
+.profilesection1 .profilefields span ,.profilesection2 .profilefields span{
+    font-size: 1rem;
+    color: grey;
+    display: flex;
+    margin-left: 29px;
+    margin-top: 1px;
+}
+
+
+
+
+.profileunderline{
+    width: 97%;
+    float: right;
+    height: 1px;
+    display: flex;
+    background-color: black;
+}
+
+.profilesection2{
+    width: 100%;
+    height: 25%;
+    overflow-y:scroll;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width:900px)
+{
+    .profileleft{
+        width: 40%;
+    }
+    .profilewidth{
+        width: 70%;
+    }
+    .profileremovewidth{
+        width: 30%;
+    }
+    .profileright{
+        width: 60%;
+    }
+    .profilesection1 h2,.profilesection2 h2, .profilesection2 .profilefields h2{
+        font-size: 25px;
+    }
+    .profilesection1 .profilefields label, .profilesection2 .profilefields label{
+        font-size: 17px;
+    }
+    .profilesection1 .profilefields span ,.profilesection2 .profilefields span{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:650px)
+{
+    .profileleft{
+        width:10%;
+        padding: 0px;
+    }
+    .profilevisible{
+        display: none;
+    }
+    .profilewidth{
+        width: 70%;
+    }
+    .profileremovewidth{
+        width: 30%;
+    }
+    .profilehamburg{
+        visibility: visible;
+        position: absolute;
+        right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 20px;
+    }
+    .profilehamburg i{
+        font-size: 20px;
+    }
+
+    .profileright{
+        width: 80%;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .profilewidth{
+        width: 100%
+    }
+    .profileremovewidth{
+        width: 0%;
+    }
+    .profilefast{
+        display: none;
+    }
+    .profilespeed{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:377px){
+	.profilefields{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profilesection2 h2{
+        font-size: 14px;
+    }
+
+    .profilesection2 .profilefields label{
+        font-size: 12px;
+    }
+    .profilesection2 .profilefields span{
+        font-size: 12px;
+    }
+}
